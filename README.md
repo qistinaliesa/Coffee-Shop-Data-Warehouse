@@ -86,18 +86,5 @@ This provides a foundation for analyzing coffee shop sales performance.
 - Star Schema
 
 ## 📊 Data Warehouse Structure
+![Star Schema](./Documentation/StarSchema.png)
 
-```text
-                 ┌───────────────┐
-                 │  DimProduct   │
-                 └───────┬───────┘
-                         │
-                         │
-┌───────────────┐   ┌────▼──────────────────┐   ┌───────────────┐
-│ DimTransaction│──►│ SalesTransaction Fact │◄──│   DimStore    │
-└───────────────┘   └────▲──────────────────┘   └───────────────┘
-                         │
-                         │
-                 ┌───────┴───────┐
-                 │    DimDate    │
-                 └───────────────┘
